@@ -3,4 +3,31 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+video{
+    position: absolute;
+    object-fit:scale-down;
+    z-index: -1;
+    opacity: 1;
+}
+table{
+    background: none;
+    margin-left: 45 px;
+    border: px solid rgb(141, 0, 249);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.258);
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    background: none;
+    width: 60%;
+    height: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px;
 }
