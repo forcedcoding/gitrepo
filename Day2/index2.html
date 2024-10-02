@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .fitems{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(247, 248, 161);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 90px;
+            border-radius: 15px;
+            /* border: 2px solid black; */
+            box-shadow: 8px 20px 16px rgba(251, 251, 251, 0.31);
+            margin: 10px;
+            /* text-shadow: 5px 10px 10px rgb(0, 28, 36); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: move;
+            animation-duration: 1ms;
+            animation-iteration-count: infinite; */
+            animation: move 1s infinite ease-in-out;
+            animation: animateBorder 4s linear infinite;
+            border: 5px solid;
+    
+        }
+        @keyframes move{
+            0%{
+                text-shadow: 5px 5px 10px rgb(0, 28, 36);
+            }
+            50%{
+                text-shadow: 2px 2px 2px rgb(0, 28, 36);
+            }
+            100%{
+                text-shadow: 5px 5px 10px rgb(0, 28, 36);
+            }
+        }
+        @keyframes animateBorder {
+  0% {
+    border: 2px solid #3498db;
+  }
+  25% {
+    border: 2px solid #2ecc71;
+  }
+  50% {
+    border: 2px solid #f39c12;
+  }
+  75% {
+    border: 2px solid #e74c3c;
+  }
+  100% {
+    border: 2px solid #9b59b6;
+  }
+}
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="fitems">1</div>
+    <div class="fitems">2</div>
+    <div class="fitems">3</div>
+    <div class="fitems">4</div>
+    </div>
+</body>
+</html>
